@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#5d385e" />
+    <title>For You, My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="lock-screen" id="lock-screen"><div class="lock-card"><div class="lock-heart">♥</div><p class="eyebrow">A PRIVATE NOTE FOR YOU</p><h1>One little<br /><em>secret first.</em></h1><p>Enter the password to open this letter from my heart.</p><form id="unlock-form"><label for="password">Password</label><input id="password" type="password" autocomplete="off" placeholder="Enter password" required /><button class="main-button" type="submit">Open my heart <span>♥</span></button><small id="password-help"></small></form></div></div>
+    <div class="app" id="app" aria-hidden="true">
+      <div class="sky" aria-hidden="true"></div><div class="floating" id="floating" aria-hidden="true"></div>
+      <header><button class="round-button" id="previous" aria-label="Previous message">←</button><p class="brand">from my <i>heart</i></p><button class="round-button" id="sound" aria-label="Play our song">♫</button></header>
+      <main class="slides">
+        <section class="slide active" aria-label="Opening message">
+          <div class="sparkles">✦ &nbsp; ♥ &nbsp; ✦</div><p class="eyebrow">A LITTLE LETTER FOR YOU</p><div class="photo-frame hero-photo"><img src="our-memory.jpeg" alt="A treasured photo of us together" /></div>
+          <h1>Hey, my<br /><em>love.</em></h1><p class="lead">I made this because you deserve more than a quick “sorry.” You deserve to feel heard.</p><button class="main-button next">Let me explain <span>♥</span></button>
+        </section>
+        <section class="slide" aria-label="Apology">
+          <div class="emoji">🥺</div><p class="eyebrow">I KNOW I HURT YOU</p><h2>I am <em>truly sorry.</em></h2><div class="glass-card"><p>I am sorry for the moments my words or actions made you feel less loved, less important, or alone.</p><p class="accent">You never deserved that from me.</p></div><button class="main-button next">Please hear me out <span>→</span></button>
+        </section>
+        <section class="slide" aria-label="Promises">
+          <p class="eyebrow">NO EXCUSES, ONLY HONESTY</p><h2>I don’t just want to say sorry.<br /><em>I want to do better.</em></h2><div class="promise-list"><article><b>♡</b><div><h3>I see your pain</h3><p>I am listening, without trying to defend myself.</p></div></article><article><b>✦</b><div><h3>I will be gentler</h3><p>With my words, my choices, and your heart.</p></div></article><article><b>♥</b><div><h3>I still choose us</h3><p>Every day, with more care than before.</p></div></article></div><button class="main-button next">One more thing <span>→</span></button>
+        </section>
+        <section class="slide" aria-label="Love letter">
+          <button class="envelope" id="open-letter" aria-label="Open my letter"><div class="letter"><span>♥</span><p>Tap to open my full letter</p></div></button><p class="eyebrow">MY HONEST APOLOGY</p><h2>I care about you<br /><em>more than my ego.</em></h2><p class="lead small">You do not have to reply right away. Take all the time you need.</p><button class="main-button next">One last question <span>→</span></button>
+        </section>
+        <section class="slide" aria-label="Forgiveness">
+          <div class="sparkles">♥ &nbsp; ✦ &nbsp; ♥</div><p class="eyebrow">WHEN YOUR HEART IS READY</p><h2>Can you<br /><em>forgive me?</em></h2><p class="lead">There is no pressure. I will respect your feelings and wait for the chance to make things right.</p><div class="choice"><button class="main-button" id="forgive">I forgive you ♥</button><button class="soft-button" id="wait">I need time</button></div><p class="response" id="response"></p><button class="restart" id="restart">Read my letter again ↻</button>
+        </section>
+      </main>
+      <div class="dots" id="dots" aria-label="Message progress"></div>
+    </div>
+    <div class="letter-modal" id="letter-modal" aria-hidden="true"><article><button id="close-letter" aria-label="Close letter">×</button><div class="letter-heart">♥</div><p class="eyebrow">MY WHOLE HEART</p><h2>My dearest love,</h2><p>I am sorry for the hurt I caused you. I know that my apology cannot instantly make it disappear, and I will never ask you to pretend that it did.</p><p>I only want you to know that your feelings matter to me. I am learning to listen with more care, to speak with more gentleness, and to love you in a way that makes you feel safe and cherished.</p><p>You are worth the patience, the effort, and every better choice I can make. Whenever your heart is ready, I will still be here—hoping we can find our way back to the warmth we share.</p><p class="signature">With all my love, always. ♥</p></article></div>
+    <audio id="song" src="give-you.mpeg" preload="auto" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
